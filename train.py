@@ -103,7 +103,7 @@ def train(T, S, m1, m2):
             model_path = os.path.join(save_dir, f"model_epoch_{epoch+1}_num_head_{num_heads[0]}.params")
 
             with open(model_path, "wb") as f:
-                f.write(flax.serialization.to_bytes(params))
+                f.write(serialization.to_bytes(params))
 
         # Print epoch loss
         print(f"Epoch {epoch+1}, Loss: {avg_epoch_loss}")
