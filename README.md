@@ -4,7 +4,7 @@
 
 This repository contains a JAX implementation of the experiments described in the paper "[How Transformers Learn Causal Structure with Gradient Descent](https://arxiv.org/abs/2402.14735)" by [Eshaan Nichani, Alex Damian, Jason D. Lee].
 
-**Code under construction**
+**Codes under construction**
 
 ## Overview
 
