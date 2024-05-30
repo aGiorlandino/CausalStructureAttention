@@ -1,6 +1,8 @@
 #model.py
 import jax.numpy as jnp
 from flax import linen as nn
+from utils import causal_mask
+
 
 class MultiHeadSelfAttention(nn.Module):
     embed_dim: int
