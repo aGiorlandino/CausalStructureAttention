@@ -1,12 +1,15 @@
 # CausalStructureAttention
  
-# JAX Implementation of How Transformers Learn Causal Structure with Gradient Descent
+# JAX Implementation of How Transformers Learn Causal Structure with Gradient Descent 
 
 This repository contains a JAX implementation of the experiments described in the paper "[How Transformers Learn Causal Structure with Gradient Descent](https://arxiv.org/abs/2402.14735)" by [Eshaan Nichani, Alex Damian, Jason D. Lee].
 
+**Code under construction**
+
 ## Overview
 
-The paper investigates how transformers learn causal structure using gradient descent. It explores the mechanisms by which transformers, a type of neural network architecture, can infer causal relationships from observational data.
+The paper investigates how transformers learn causal structure using gradient descent. It explores the mechanisms by which transformers, a type of neural network architecture, can infer causal relationships from observational data generated according to a causally structured process.
+This code focuses on the 3-gram structure.
 
 ## Requirements
 
@@ -14,7 +17,7 @@ The paper investigates how transformers learn causal structure using gradient de
 - JAX
 - Flax
 - NumPy
-- [List any other dependencies] ...
+- [List any other dependencies] ...(Still working on this)
 
 ## Installation
 
@@ -25,7 +28,7 @@ https://github.com/aGiorlandino/CausalStructureAttention
 cd CausalStructureAttention
 ```
 
-Install the required dependencies:
+Install the required dependencies: #still have to finish this
 
 ```bash
 pip install -r requirements.txt
@@ -43,10 +46,13 @@ python main.py
 
 - `main.py`: Main script to run the experiments.
 - `models.py`: Implementation of the neural network models used in the paper.
-- `datasets.py`: Loading and preprocessing of datasets.
+- `train.py`: Implementation of cross-entropy minimization
+- `data_generation.py`: generate 3-grams
 - `utils.py`: Utility functions.
-- `experiments/`: Directory containing scripts for specific experiments.
-- `results/`: Directory to store experimental results.
+[- `experiments/`: Directory containing scripts for specific experiments.]:
+[- `results/`: Directory to store experimental results.]:
+
+<!---
 
 ## Contributing
 
@@ -59,3 +65,4 @@ python main.py
 ## Acknowledgments
 
 [Optional: Acknowledge any contributors, libraries, or resources that you used in your project.]
+-->

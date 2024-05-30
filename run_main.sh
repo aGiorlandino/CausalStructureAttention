@@ -10,4 +10,4 @@ m2=1
 # source /path/to/your/venv/bin/activate
 
 # Run your Python script and redirect output to a file
-python main.py $T $S $m1 $m2 > output.log 2>&1
+python -u main.py  & $T $S $m1 $m2 > output.log 2>&1 & 
