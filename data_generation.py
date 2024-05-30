@@ -1,6 +1,7 @@
 # data_generation.py
 
 import numpy as np
+
     
 def create_3gram_transition_matrix(S):
     """

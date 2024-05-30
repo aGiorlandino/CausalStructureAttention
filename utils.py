@@ -5,6 +5,7 @@ import jax.numpy as jnp
 import numpy as np
 from flax import linen as nn
 
+
 # Define utility functions for attention mechanism
 def causal_mask(size):
     mask = np.tril(np.ones((size, size), dtype=np.bool_), k=0)

@@ -11,6 +11,7 @@ from utils import cross_entropy_loss, causal_mask, embed
 from model import NextTokenPredictor
 from data_generation import create_3gram_transition_matrix, generate_sequence
 
+
 def train(T, S, m1, m2):
     # Define constants and parameters
     num_heads = [m1, m2]  # Number of heads for each layer
@@ -72,7 +73,7 @@ def train(T, S, m1, m2):
                     target_sequences_onehot[i, j, target_sequences[i, j]] = 1
 
             # Embed input sequences
-            embedded_sequences = embed(sequences, S, T, d_2)
+            embedded_sequences = embed(sequences, S, d_2)
 
             # Convert embedded sequences and targets to JAX arrays
             batch_sequences = jnp.array(embedded_sequences)

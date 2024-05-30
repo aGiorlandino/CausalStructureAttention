@@ -2,6 +2,7 @@
 
 from train import train
 
+
 def main():
     # Define constants
     T = 20  # Sequence length
