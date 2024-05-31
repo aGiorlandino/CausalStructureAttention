@@ -109,6 +109,6 @@ def train(T, S, m1, m2):
         print(f"Epoch {epoch+1}, Loss: {avg_epoch_loss}")
 
     # Save training losses to file
-    losses_path = os.path.join(save_dir, "training_losses_num_head_{num_heads[0]}.npy")
+    losses_path = os.path.join(save_dir, f"training_losses_num_head_{num_heads[0]}.npy")
     np.save(losses_path, np.array(training_losses))
 
