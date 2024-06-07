@@ -38,8 +38,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-[Explain how to use your code. Include instructions on how to run the experiments, train models, and reproduce the results of the paper.]
-
+[...]
 ```bash
 python main.py
 ```
